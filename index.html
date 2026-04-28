@@ -1,228 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head> 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17709557185"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17709557185');
-</script>
-
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M74NN8DD');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chirag Digital - Digital Marketing Course</title>
-  <style>
-    body 
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M74NN8DD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->{
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f7f7f7;
-      color: #333;
-    }
-
-    header {
-      background-color: #0d6efd;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 10px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      margin-bottom: 50px;
-    }
-
-    h2 {
-      color: #0d6efd;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
-    }
-
-    .pricing-cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      flex: 1 1 250px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card p {
-      margin: 10px 0;
-    }
-
-    .card .price {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #0d6efd;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-
-    .btn:hover {
-      background-color: #0959c5;
-    }
-
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 20px;
-    }
-
-    form input, form textarea, form select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    form button {
-      background-color: #0d6efd;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background-color: #0959c5;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Chirag Digital</h1>
-  <p>Learn SEO, Google Ads, Social Media & more — Become Job-Ready!</p>
-</header>
-
-<div class="container">
-  <!-- About Section -->
-  <section id="about">
-    <h2>About This Course</h2>
-    <p>This is a practical, beginner-friendly digital marketing course by Chirag Digital. Perfect for students, business owners, and anyone wanting to master online marketing. Learn with real examples, projects, and step-by-step guidance.</p>
-  </section>
-
-  <!-- Modules Section -->
-  <section id="modules">
-    <h2>Course Modules</h2>
-    <ul>
-      <li>Module 1: Introduction to Digital Marketing</li>
-      <li>Module 2: SEO Basics</li>
-      <li>Module 3: Google Ads & YouTube Marketing</li>
-      <li>Module 4: Social Media Ads (Facebook & Instagram)</li>
-      <li>Module 5: Landing Page Design & A/B Testing</li>
-      <li>Module 6: Analytics & ROI Tracking</li>
-    </ul>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing-cards">
-      <div class="card">
-        <h3>Free Demo</h3>
-        <p>First module + 1 live session</p>
-        <div class="price">Free</div>
-        <a href="mailto:chiraglearns@gmail.com" class="btn">Get Demo</a>
+export default function LandingPage(){
+  const handleSubmit=(e)=>{e.preventDefault(); const data=new FormData(e.target); const vals=Object.fromEntries(data.entries()); localStorage.setItem('leadData', JSON.stringify(vals)); const app=document.getElementById('root'); if(app){ app.innerHTML=`<div style='font-family:Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f8fafc;padding:24px'><div style='max-width:600px;background:white;border-radius:24px;padding:40px;box-shadow:0 10px 30px rgba(0,0,0,.08);text-align:center'><h1 style='font-size:40px;margin-bottom:12px'>Thank You!</h1><p style='font-size:18px;color:#475569'>Your request has been submitted successfully. Our Ghaziabad moving expert will contact you shortly.</p><a href="/" style='display:inline-block;margin-top:20px;padding:12px 20px;background:#111827;color:#fff;border-radius:12px;text-decoration:none'>Back to Home</a></div></div>`; }
+  };
+  return (
+  <div className='min-h-screen bg-slate-50 text-slate-900'>
+    <section className='bg-gradient-to-r from-blue-700 to-indigo-700 text-white'>
+      <div className='max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center'>
+        <div>
+          <h1 className='text-5xl font-bold leading-tight'>Reliable Packers & Movers in Ghaziabad</h1>
+          <p className='mt-5 text-lg text-blue-100'>House shifting, office relocation, car transport, storage and local moving with fast support and affordable pricing.</p>
+          <div className='mt-8 grid grid-cols-2 gap-4 text-sm'>
+            <div className='bg-white/10 p-4 rounded-2xl'>✔ Same Day Survey</div>
+            <div className='bg-white/10 p-4 rounded-2xl'>✔ Safe Packing</div>
+            <div className='bg-white/10 p-4 rounded-2xl'>✔ Trained Staff</div>
+            <div className='bg-white/10 p-4 rounded-2xl'>✔ Transparent Rates</div>
+          </div>
+        </div>
+        <div className='bg-white text-slate-900 rounded-3xl shadow-2xl p-8'>
+          <h2 className='text-2xl font-semibold mb-2'>Get Free Quote</h2>
+          <p className='text-slate-500 mb-6'>Fill the form and we’ll contact you shortly.</p>
+          <form onSubmit={handleSubmit} className='space-y-4'>
+            <input required name='name' placeholder='Full Name' className='w-full border rounded-xl p-3'/>
+            <input required type='email' name='email' placeholder='Email ID' className='w-full border rounded-xl p-3'/>
+            <input required name='phone' placeholder='Phone Number' className='w-full border rounded-xl p-3'/>
+            <input required name='country' placeholder='Country' className='w-full border rounded-xl p-3'/>
+            <input required name='city' placeholder='City' className='w-full border rounded-xl p-3'/>
+            <button className='w-full bg-blue-700 hover:bg-blue-800 text-white rounded-xl p-3 font-semibold'>Submit Request</button>
+          </form>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>Standard</h3>
-        <p>Full course + projects</p>
-        <div class="price">₹4,999</div>
-        <a href="mailto:chiraglearns@gmail.com" class="btn">Enroll Now</a>
-      </div>
-
-      <div class="card">
-        <h3>Mentorship</h3>
-        <p>Standard + 1-on-1 mentoring</p>
-        <div class="price">₹9,999</div>
-        <a href="mailto:chiraglearns@gmail.com" class="btn">Apply</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or want to try the demo? Fill out the form below.</p>
-    <form action="mailto:chiraglearns@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Your Name" required>
-      <input type="email" name="Email" placeholder="Your Email" required>
-      <input type="text" name="Phone" placeholder="Phone (optional)">
-      <select name="Interested">
-        <option>Free Demo</option>
-        <option>Standard</option>
-        <option>Mentorship</option>
-      </select>
-      <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</div>
-
-<footer>
-  © 2025 Chirag Digital - Digital Marketing Course
-</footer>
-
-</body>
-</html>
+    </section>
+    <section className='max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-6'>
+      <div className='bg-white p-6 rounded-3xl shadow'>Home Shifting</div>
+      <div className='bg-white p-6 rounded-3xl shadow'>Office Relocation</div>
+      <div className='bg-white p-6 rounded-3xl shadow'>Vehicle Transport</div>
+    </section>
+  </div>);
+}
